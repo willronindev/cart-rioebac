@@ -155,7 +155,8 @@ int main ()
                 printf("\n\t opção1 - inclusão de usuário \n\t nome:\t\n") ;
                 printf("\n\t opção2 - consulta de usuário \n\t nome:\n") ;
                 printf("\n\t opção3 - exclusão de usuário \n\t nome: \n") ;
-			    printf("\n\t opção: ") ;
+			    printf("\n\t opção4 - sair do sistema \n\t ") ;
+			    printf("opção:");
 		
 			  // final do menu
              
@@ -182,12 +183,18 @@ int main ()
                 
                 break;
                 
+                case 4 :
+                	
+                printf("Obrigado por utilizar o sistema! \n ");
+                return 0 ; // Esse código faz com que o laço seja quebrado e o programa retorne novamente
+                
                 
                 default: // é uma opção que não foi colocada
                 
                 printf ("Esta opção não está disponível \n");
                 system ("pause");
                 break;
+                
                 
                          	   
 			 }   
